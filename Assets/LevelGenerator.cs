@@ -18,6 +18,7 @@ public class LevelGenerator : MonoBehaviour {
 	public GameObject endGoalPrefab;
 
 	List<GameObject> map;
+	List<int> mapMobSpawn;
 
 	public Transform parent;
 	
@@ -44,10 +45,15 @@ public class LevelGenerator : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		map = new List<GameObject>();
+		mapMobSpawn = new List<int>();
+
+		GenerateRandomMobs(mapMobSpawn, 5);
+
+
 		perlinNoiseStep = Random.Range(0.0001f, 0.242f);
 		print(perlinNoiseStep);
 		xSoundPos = Random.Range (0.1f, 1000000f);
-		map = new List<GameObject>();
 		GenerateMap (genCount);
 		GenerateLeftCollider();
 		_mainCam = Camera.main;
@@ -72,7 +78,6 @@ public class LevelGenerator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		// if (_mainCam.)
 	}
 
 	void GenerateMap (int count) {
@@ -389,5 +394,12 @@ public class LevelGenerator : MonoBehaviour {
 
 	public string GetLastMapID (){
 		return map.Last().name;
+	}
+
+	
+	void GenerateRandomMobs(List<int> list, int count) {
+		for (int i = 0; i < count; i++) {
+			list.Add (Random.Range(25, mapMaxSize));
+		}
 	}
 }
