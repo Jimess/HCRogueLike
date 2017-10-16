@@ -15,8 +15,8 @@ public class ObstacleOnCollision : MonoBehaviour {
 
 	//if a correct collider hits and this needs to be destroyed
 	public void ObstactleDestroy() {
-		Instantiate (explosion, transform.position, transform.rotation);
 		Destroy(gameObject);
+		Destroy (Instantiate (explosion, transform.position, transform.rotation), 4f);
 		//instantiate particles
 	}
 }

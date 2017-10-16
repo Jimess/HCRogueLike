@@ -4,10 +4,22 @@ using UnityEngine;
 
 public class CarBumperOnCollision : MonoBehaviour {
 
-	void OnCollisionEnter2D (Collision2D col) {
-		if (col.gameObject.tag == "Obstacle") {
+	void OnTriggerEnter2D (Collider2D other) {
+		if (other.tag == "Obstacle") {
 			print("Bumper Hit!");
-			col.gameObject.GetComponent<ObstacleOnCollision>().ObstactleDestroy();
+			StartCoroutine(SlowMotionForSeconds(0.5f, 0.2f));
+			other.GetComponent<ObstacleOnCollision>().ObstactleDestroy();
 		}
+	}
+
+	IEnumerator SlowMotionForSeconds (float time, float scale) {
+		float timeStamp = Time.time + time;
+		Time.timeScale = scale;
+		Time.fixedDeltaTime = 0.02f * Time.timeScale;
+		while (timeStamp > Time.time) {
+			yield return null;
+		}
+		Time.timeScale = 1f;
+		Time.fixedDeltaTime = 0.02f * Time.timeScale;
 	}
 }
