@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - Car
   - LevelController
+  - CarBumper
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -17,14 +19,14 @@ TagManager:
   - UI
   - 
   - 
+  - 
+  - 
+  - 
   - Car_Base
+  - Car_Bumper
   - Car_Wheels
   - CamBounds
   - Ground
-  - 
-  - 
-  - 
-  - 
   - 
   - 
   - 

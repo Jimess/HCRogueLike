@@ -18,7 +18,8 @@ public class LevelGenerator : MonoBehaviour {
 	public GameObject endGoalPrefab;
 
 	List<GameObject> map;
-	List<int> mapMobSpawn;
+	List<int> RNG_obstacleList;
+	public GameObject obstaclePrefab;
 
 	public Transform parent;
 	
@@ -46,12 +47,12 @@ public class LevelGenerator : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		map = new List<GameObject>();
-		mapMobSpawn = new List<int>();
+		RNG_obstacleList = new List<int>();
 
-		GenerateRandomMobs(mapMobSpawn, 5);
+		GenerateRandomMobs(RNG_obstacleList, 5);
 
 
-		perlinNoiseStep = Random.Range(0.0001f, 0.242f);
+		perlinNoiseStep = Random.Range(0.0001f, 0.11f);
 		print(perlinNoiseStep);
 		xSoundPos = Random.Range (0.1f, 1000000f);
 		GenerateMap (genCount);
@@ -202,6 +203,14 @@ public class LevelGenerator : MonoBehaviour {
 			} else {
 				sq = new Square (lastEdgeX, lastEdgeX + 1, tempValue, lastEdgeY, i, sprite.bounds.size.y);
 				lastEdgeY = tempValue;
+			}
+
+			//instantiate obstacle if it is supposed to be here
+			if (RNG_obstacleList.Contains(i)) {
+				SpriteRenderer tempRend = obstaclePrefab.GetComponent<SpriteRenderer>();
+				Instantiate (obstaclePrefab, new Vector3(i + (tempRend.bounds.size.x/2), sq.offsetY + sq.offsetYTOP + (tempRend.bounds.size.y/2), 0), 
+				Quaternion.identity);
+				print("Spawning obstacle at: " + i + " at height: " + sq.offsetYTOP);
 			}
 
 			//the next start polygon points are going to be this blocks end points (SO THEY CONNECT TOGETHER)
