@@ -25,7 +25,7 @@ public class LevelGenerator : MonoBehaviour {
 	
 	//perlin noise vars that need to be consistent
 	float xSoundPos = 1f; //can add more RNG here by adding a RNG number and then incrementing
-	float ySoundScale = 10f;
+	float ySoundScale = 7f;
 
 	public float lastEdgeX = 1f;
 	public float lastEdgeY = 1f;

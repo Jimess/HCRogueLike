@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114678334115020598}
   m_Layer: 13
   m_Name: Wheel_Rear
-  m_TagString: Untagged
+  m_TagString: CarWheels
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 114474791731521984}
   m_Layer: 12
   m_Name: 14
-  m_TagString: Untagged
+  m_TagString: CarBumper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 50578201992745052}
   m_Layer: 13
   m_Name: Wheel_Front
-  m_TagString: Untagged
+  m_TagString: CarWheels
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,8 +75,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4374380470675398}
   m_Layer: 12
-  m_Name: FrontBash
-  m_TagString: Untagged
+  m_Name: FrontBumper
+  m_TagString: CarBumper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 235713363671079246}
   - component: {fileID: 235524751340263098}
   - component: {fileID: 114244796497063572}
+  - component: {fileID: 114077611751470444}
   m_Layer: 11
   m_Name: Car
   m_TagString: Car
@@ -271,7 +272,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 4487ee7e9ec439d45ba45ff364880196, type: 2}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -334,6 +335,18 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.16}
   m_Size: {x: 1.33, y: 0.36}
   m_Direction: 1
+--- !u!114 &114077611751470444
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1992535155186476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccd96c0457884445b39005584b4d5de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  car_bumper: {fileID: 1704113695134518}
 --- !u!114 &114244796497063572
 MonoBehaviour:
   m_ObjectHideFlags: 1

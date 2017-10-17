@@ -1,0 +1,324 @@
+fileFormatVersion: 2
+guid: 33711d86b60d0704cb67324a765cd527
+timeCreated: 1508248558
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Stone_Pieces_0
+    21300002: Stone_Pieces_1
+    21300004: Stone_Pieces_2
+    21300006: Stone_Pieces_3
+    21300008: Stone_Pieces_4
+    21300010: Stone_Pieces_5
+    21300012: Stone_Pieces_6
+    21300014: Stone_Pieces_7
+    21300016: Stone_Pieces_8
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Stone_Pieces_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: -1}
+        - {x: 2, y: -8}
+        - {x: 2, y: -9}
+        - {x: 15, y: -9}
+        - {x: 15, y: 4}
+        - {x: 12, y: 3}
+      physicsShape:
+      - - {x: 4, y: -9}
+        - {x: 15, y: -9}
+        - {x: 15, y: 3}
+        - {x: 10.837208, y: -5.3255844}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Stone_Pieces_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 36
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 9}
+        - {x: -15, y: 7}
+        - {x: -15, y: -9}
+        - {x: 15, y: -9}
+        - {x: 15, y: 7}
+        - {x: 7, y: 9}
+      physicsShape:
+      - - {x: -6.7441864, y: 7.9534874}
+        - {x: -13.953489, y: 2.2558136}
+        - {x: -15, y: -9}
+        - {x: 15, y: -9}
+        - {x: 11.279068, y: -0.209301}
+        - {x: 1.8372078, y: 7.9534874}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Stone_Pieces_2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 36
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: -9}
+        - {x: 5, y: -9}
+        - {x: 4, y: -4}
+        - {x: -6, y: 3}
+        - {x: -15, y: 3}
+      physicsShape:
+      - - {x: -14.883724, y: 1.6046486}
+        - {x: -15, y: -9}
+        - {x: 2.4883728, y: -9}
+        - {x: -4.0232544, y: -2.1860466}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Stone_Pieces_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 9}
+        - {x: -8, y: 2}
+        - {x: -13, y: -9}
+        - {x: 15, y: -9}
+        - {x: 15, y: 9}
+      physicsShape:
+      - - {x: 3.9069767, y: 9}
+        - {x: -4.1451044, y: 1.1687965}
+        - {x: -10.255814, y: -8.651163}
+        - {x: 15, y: -9}
+        - {x: 15, y: 9}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Stone_Pieces_4
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 18
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 9}
+        - {x: -15, y: -9}
+        - {x: 15, y: -9}
+        - {x: 15, y: 9}
+      physicsShape:
+      - - {x: -15, y: 9}
+        - {x: -15, y: -9}
+        - {x: 15, y: -9}
+        - {x: 15, y: 9}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Stone_Pieces_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 18
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 9}
+        - {x: -15, y: -9}
+        - {x: 13, y: -9}
+        - {x: 13, y: -6}
+        - {x: 12, y: 1}
+        - {x: 7, y: 9}
+      physicsShape:
+      - - {x: -15, y: 9}
+        - {x: -15, y: -9}
+        - {x: 10.558136, y: -9}
+        - {x: 7.9767456, y: -0.046512604}
+        - {x: 2.6279068, y: 9}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Stone_Pieces_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 9}
+        - {x: -15, y: 6}
+        - {x: -15, y: -9}
+        - {x: 15, y: -9}
+        - {x: 15, y: 9}
+      physicsShape:
+      - - {x: -10.511627, y: 9}
+        - {x: -15, y: -9}
+        - {x: 15, y: -9}
+        - {x: 15, y: 9}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Stone_Pieces_7
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 9}
+        - {x: -15, y: -9}
+        - {x: 15, y: -9}
+        - {x: 15, y: 9}
+      physicsShape:
+      - - {x: -15, y: 9}
+        - {x: -15, y: -9}
+        - {x: 15, y: -9}
+        - {x: 15, y: 9}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Stone_Pieces_8
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 9}
+        - {x: -15, y: -9}
+        - {x: 15, y: -9}
+        - {x: 15, y: 8}
+        - {x: 14, y: 9}
+      physicsShape:
+      - - {x: 10.790695, y: 8.88372}
+        - {x: -15, y: 9}
+        - {x: -15, y: -9}
+        - {x: 15, y: -9}
+      tessellationDetail: 0
+    outline:
+    - - {x: -7.488369, y: 25.604652}
+      - {x: -32.906975, y: 2.4418583}
+      - {x: -45, y: -27}
+      - {x: 45, y: -27}
+      - {x: 33.953484, y: 7.9069786}
+      - {x: 2.627903, y: 25.604649}
+    physicsShape:
+    - - {x: -45, y: -27}
+      - {x: 45, y: -27}
+      - {x: 40.69767, y: -10.209303}
+      - {x: 35.325584, y: 4.302326}
+      - {x: 3.4186058, y: 25.488369}
+      - {x: -8.139534, y: 25.023258}
+      - {x: -35.23256, y: -0.4651165}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

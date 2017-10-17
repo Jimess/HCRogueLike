@@ -10,6 +10,7 @@ TagManager:
   - LevelController
   - CarBumper
   - Obstacle
+  - CarWheels
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - Car_Wheels
   - CamBounds
   - Ground
-  - 
+  - ObstaclePieces
   - 
   - 
   - 

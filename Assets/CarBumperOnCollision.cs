@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class CarBumperOnCollision : MonoBehaviour {
 
-	void OnTriggerEnter2D (Collider2D other) {
-		if (other.tag == "Obstacle") {
-			print("Bumper Hit!");
-			StartCoroutine(SlowMotionForSeconds(0.5f, 0.2f));
-			other.GetComponent<ObstacleOnCollision>().ObstactleDestroy();
-		}
+	// void OnTriggerEnter2D (Collider2D other) {
+	// 	if (other.tag == "Obstacle") {
+	// 		print("Bumper Hit!");
+	// 		StartCoroutine(SlowMotionForSeconds(0.5f, 0.2f));
+	// 		other.GetComponent<ObstacleOnCollision>().ObstactleDestroy();
+	// 	}
+	// }
+
+	public void OnHitSlowMotion() {
+		StartCoroutine(SlowMotionForSeconds(0.5f, 0.2f));
 	}
 
 	IEnumerator SlowMotionForSeconds (float time, float scale) {
