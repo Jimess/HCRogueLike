@@ -10,10 +10,17 @@ public class ShowCarScript : MonoBehaviour {
 	private JointSuspension2D backSuspension;
 	private JointSuspension2D frontSuspension;
 
+
+	void OnEnable() { // on enable place the car a bit up so it does not touch the ground
+		// RectTransform.
+		RectTransform rect = GetComponent<RectTransform>();
+		rect.anchoredPosition = new Vector2(rect.anchoredPosition.x, 220f);
+	}
+
 	// Use this for initialization
 	void Start () {
 		backSuspension = new JointSuspension2D() {angle = 90f};
-		frontSuspension = new JointSuspension2D() {angle = 90f}; 
+		frontSuspension = new JointSuspension2D() {angle = 90f};
 	}
 	
 	// Update is called once per frame

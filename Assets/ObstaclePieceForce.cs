@@ -12,7 +12,7 @@ public class ObstaclePieceForce : MonoBehaviour {
 
 	void OnCollisionEnter2D (Collision2D collision) {
 		if (collision.gameObject.tag == "Car") {
-			print("Ignoring collision with: " + collision.collider.tag);
+			// print("Ignoring collision with: " + collision.collider.tag);
 			Physics2D.IgnoreCollision(GetComponent<Collider2D>(), collision.collider);
 		}
 	}

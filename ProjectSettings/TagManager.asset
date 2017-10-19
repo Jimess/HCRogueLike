@@ -29,7 +29,7 @@ TagManager:
   - CamBounds
   - Ground
   - ObstaclePieces
-  - 
+  - CamBackCollider
   - 
   - 
   - 

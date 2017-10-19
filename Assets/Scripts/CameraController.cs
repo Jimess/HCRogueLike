@@ -16,8 +16,16 @@ public class CameraController : MonoBehaviour {
 
 	void LateUpdate ()
 	{
-		Vector3 newPosition = new Vector2 (target.position.x + offstetX, target.position.y + offsetY);
-		newPosition.z = -10;
+		Vector3 newPosition;
+
+		if (target.position.x + offstetX < transform.position.x) {
+			// print("Going back!");
+			newPosition = new Vector2 (transform.position.x, target.position.y + offsetY);
+			newPosition.z = -10;
+		} else {
+			newPosition = new Vector2 (target.position.x + offstetX, target.position.y + offsetY);
+			newPosition.z = -10;
+		}
 
 		transform.position = newPosition;
 	}

@@ -184,7 +184,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.5
   m_LinearDrag: 0.8
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -224,7 +224,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.5
   m_LinearDrag: 0.8
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -591,7 +591,7 @@ WheelJoint2D:
   m_ConnectedRigidBody: {fileID: 50578201992745052}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
+  m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.53, y: -0.47915384}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_Suspension:
